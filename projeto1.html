@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apresentação do Projeto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .imagem22{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;}
+.imagen22{
+width: 200px;        
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+}
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .feature-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 12px 15px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="imagem22">
+            <img src="imagens/projeto1.png"  class="imagen22">
+          </div>
+      <h1>Projeto de Coleta de Dados Bancários no LinkedIn</h1>
+      <p>Scraping automatizado com exportação de dados e interface gráfica integrada</p>
+    </header>
+
+    <section>
+        <h2>Contexto</h2>
+        <p>
+          Muitas empresas precisam encontrar e analisar informações sobre profissionais do setor bancário, seja para contratar, estudar o mercado ou buscar contatos estratégicos. A principal fonte desses dados costuma ser o LinkedIn, uma rede social voltada para o mundo do trabalho.
+        </p>
+        <p>
+          No entanto, o LinkedIn impõe diversas limitações: é necessário estar logado, há restrições de acesso por quantidade de perfis vistos, e o uso de sua API oficial é limitado, burocrático e, muitas vezes, pago. Isso dificulta bastante qualquer tentativa de análise em escala.
+        </p>
+        <p>
+          Este projeto foi criado justamente para contornar esses obstáculos de forma segura e automatizada. A ferramenta simula o comportamento de um usuário comum, acessando perfis públicos de forma discreta e extraindo informações úteis como nome completo, CPF (quando disponível em fontes abertas), número de telefone, cargo, empresas em que trabalhou e por quanto tempo.
+        </p>
+        <p>
+          Um dos maiores diferenciais do projeto é sua independência: ele não depende de APIs do LinkedIn, de autenticação ou de ferramentas externas para funcionar. Toda a lógica de coleta, organização e exportação dos dados é feita internamente, usando apenas recursos controlados diretamente pelo sistema.
+        </p>
+        <p>
+          Além disso, o projeto já conta com uma interface gráfica, exportação de resultados e um painel visual para facilitar o uso, mesmo por quem não tem conhecimento técnico.
+        </p>
+      </section>
+      
+
+    <section>
+      <h2>Abordagem Técnica</h2>
+      <ul>
+        <li>Coleta de links de perfis via Google Search API com filtros por setor, cargo e região</li>
+        <li>Extração automatizada com Puppeteer simulando navegação humana</li>
+        <li>Burlas implementadas: rotação de user-agents, proxies, delays aleatórios, controle de sessão</li>
+        <li>Coleta de dados públicos e complementares obtidos de fontes abertas</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tipos de Dados Coletados</h2>
+      <ul>
+        <li>Nome completo</li>
+        <li>CPF (quando disponível em fontes públicas correlatas)</li>
+        <li>Número de telefone</li>
+        <li>Cargo atual e anteriores</li>
+        <li>Empresas onde trabalhou e período de atuação</li>
+        <li>Localização e breve descrição do perfil</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Funcionalidades Implementadas</h2>
+      <div class="features-grid">
+        <div class="feature-box">Scraping com Puppeteer</div>
+        <div class="feature-box">Exportação em CSV, JSON e Excel</div>
+        <div class="feature-box">Interface gráfica completa</div>
+        <div class="feature-box">Dashboard com filtros e busca</div>
+        <div class="feature-box">Agendamento automático</div>
+        <div class="feature-box">Controle de sessão e reintentos</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Diferenciais Técnicos</h2>
+      <ul>
+        <li>Independência de APIs privadas</li>
+        <li>Alta taxa de sucesso mesmo em perfis com restrições regionais</li>
+        <li>Foco específico no nicho bancário</li>
+        <li>Coleta silenciosa e segura de dados públicos e complementares</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Próximos Desenvolvimentos</h2>
+      <ul>
+        <li>Classificação automática de perfis por relevância e área</li>
+        <li>Integração com sistemas externos (ATS, CRM, BI)</li>
+        <li>Notificações e relatórios automatizados</li>
+        <li>Detecção de padrões e gaps em perfis</li>
+      </ul>
+    </section>
+
+    <footer>
+      Projeto com fins estratégicos e educacionais. Apenas dados públicos e fontes abertas são utilizados.
+    </footer>
+  </div>
+</body>
+</html>

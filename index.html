@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo - Diogo Luis Gapski Fernandes</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="menuLateral" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#dados">Dados Pessoais</a>
+  <a href="#apresentacao">Apresentação</a>
+  <a href="#formacao">Formação</a>
+  <a href="#experiencia">Experiência</a>
+  <a href="#conhecimentos">Conhecimentos</a>
+  <a href="#habilidades">Habilidades</a>
+  <a href="#idiomas">Idiomas</a>
+</div>
+
+<span class="openbtn" onclick="openNav()">☰ Menu</span>
+
+<div id="conteudo">
+  <section id="dados">
+    <h1>Diogo Luis Gapski Fernandes</h1>
+    <p><strong>Telefone:</strong> +55 41 99677-4152<br>
+       <strong>Email:</strong> diogo.lgapski@gmail.com<br>
+       <strong>Localidade:</strong> Curitiba, Brasil</p>
+  </section>
+  <div class="imagem22">
+    <img src="imagens/diogo.jpg"  class="imagen22">
+  </div>
+
+  <section id="apresentacao">
+    <h2>Apresentação</h2>
+    <p>Profissional com forte perfil técnico e visão estratégica, especializado em automação de sistemas. Capaz de liderar iniciativas de automação desde a análise de processos até a implementação de soluções eficientes e escaláveis. Atua como verdadeiro gestor de automação, promovendo ganhos significativos de produtividade por meio de tecnologias modernas e pensamento orientado à eficiência.</p>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <p>Ensino Médio Técnico Integrado em Informática para Jogos Digitais – IFPR<br>Previsão de conclusão: Dezembro de 2025</p>
+    <h3>Cursos complementares:</h3>
+    <ul>
+      <li>Desenvolvimento Web Full Stack – DIO</li>
+      <li>Introdução à Ciência de Dados – Fundação Bradesco</li>
+      <li>Git e GitHub para Iniciantes – Udemy</li>
+      <li>Introdução ao Desenvolvimento de APIs RESTful</li>
+      <li>Boas Práticas de UX/UI para Web e Apps</li>
+    </ul>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência</h2>
+    <ul>
+      <li>Desenvolvedor Web - Black-Academy</li>
+      <li>Desenvolvedor Android - PlayInformática</li>
+      <li>Criação de sites responsivos com HTML, CSS e JavaScript</li>
+      <li>Desenvolvimento de apps Android com funcionalidades online</li>
+      <li>Conexão e consumo de APIs REST para integração de dados</li>
+      <li>Criação de scripts Python para automação de tarefas administrativas e coleta de dados</li>
+      <li>Testes de usabilidade com usuários reais e melhorias de design</li>
+      <li>Automação de processos de gerenciamento de pessoas</li>
+      <li>Marketing digital, social media e gestão de redes sociais</li>
+      <li>Administração de bancos de dados e relatórios comerciais</li>
+    </ul>
+  </section>
+
+  <section id="conhecimentos">
+    <h2>Conhecimentos Técnicos</h2>
+    <ul>
+      <li>Python (Avançado), Shell Script (Avançado), C# e C++ (Intermediário)</li>
+      <li>HTML, CSS, JavaScript (Intermediário)</li>
+      <li>Banco de Dados (SQL e NoSQL), Unity (2D e 3D), REST APIs</li>
+      <li>Automação de processos com scripts</li>
+      <li>Web Design, UI/UX, Design Responsivo e Mobile-First</li>
+      <li>Edição de imagens e vídeos, Copywriting</li>
+      <li>Git, GitHub, Scrum e metodologias ágeis</li>
+      <li>Personalização de apps Android com MT Manager</li>
+    </ul>
+  </section>
+
+  <section id="habilidades">
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Proatividade na busca por soluções e aprendizado constante</li>
+      <li>Facilidade de adaptação a novas tecnologias e ferramentas</li>
+      <li>Boa comunicação e trabalho em equipe multidisciplinar</li>
+      <li>Organização e gestão de tempo em múltiplos projetos</li>
+      <li>Resiliência e criatividade para resolução de problemas técnicos</li>
+    </ul>
+  </section>
+
+  <section id="idiomas">
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Português – Nativo</li>
+      <li>Inglês – Intermediário (leitura técnica e comunicação básica)</li>
+      <li>Espanhol – Básico (compreensão de leitura e vocabulário técnico)</li>
+    </ul>
+  </section>
+</div>
+
+
+
+
+
+<section id="carrossel">
+  <h2>Galeria de projetos</h2>
+  <div class="carrossel-container">
+    <button class="carrossel-btn" id="prevBtn">&#10094;</button>
+    <div class="carrossel-imagens" id="carrosselImagens">
+      <div class="modal-overlay" id="popup">
+        <div class="modal">
+          <button class="close-btn" onclick="fecharPopup()">✖</button>
+          <iframe id="iframePopup" src=""></iframe>
+        </div>
+      </div>
+      <img src="imagens/projeto1.png" onclick="abrirPopup('projeto1.html')" alt="projeto">
+      <img src="imagens/projeto2.png" onclick="abrirPopup('projeto2.html')" alt="projeto 2">
+      <img src="imagens/projeto3.png" onclick="abrirPopup('projeto3.html')" alt="projeto 3">
+      <img src="imagens/projeto4.png" onclick="abrirPopup('projeto4.html')" alt="jogo tcc">
+
+      <a href="diogo abelha/index.html" target="_blank">
+        <img src="imagens/bee1.png" alt="Novo projeto">
+      </a>
+    </div>
+    <button class="carrossel-btn" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 Diogo Luis Gapski Fernandes. Todos os direitos reservados.</p>
+  <button onclick="mudarFonte('Roboto')">Roboto</button>
+  <button onclick="mudarFonte('Lobster')">Lobster</button>
+  <button onclick="mudarFonte('Montserrat')">Montserrat</button>
+</footer>
+
+<script src="javascript/javascript.js"></script>
+</body>
+</html>
